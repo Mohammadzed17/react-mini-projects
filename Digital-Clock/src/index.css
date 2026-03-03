@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background: url('https://i.pinimg.com/1200x/ed/d6/bd/edd6bdb571c4b87d81a4c71bbc47f321.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clockContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    font-size: 5em;
+    font-family: fantasy;
+    font-weight: 100;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+    letter-spacing: 4px;
+}

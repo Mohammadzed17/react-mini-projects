@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: #0f172a;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1 {
+    margin-top: 90px;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+/* Main container */
+.todolist {
+    background-color: #020617;
+    padding: 30px;
+    width: 520px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    color: #f8fafc;
+}
+
+/* Input section */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-size: 1.2rem;
+}
+
+.input-section input::placeholder {
+    color: #94a3b8;
+}
+
+.input-section button {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(0, 105, 0);
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s, transform 0.2s;
+    font-size: 1.1rem;
+}
+
+.input-section button:hover {
+    background-color: #008f28;
+    transform: translateY(-2px);
+    scale: 1.1;
+}
+
+/* Task list */
+.task-display ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Task item */
+.task-display li {
+    background-color: #0f172a;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Task text */
+.text {
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.delete-button {
+    background-color: #dc2626;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+    scale: 1.1;
+}
+
+.moveUpBtn , .moveDownBtn {
+    background-color: #1e293b;
+    border: none;
+    border-radius: 6px;
+    color: #f8fafc;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.moveUpBtn:hover {
+    background-color: #334155;
+    transform: translateY(-2px);
+}
+.moveDownBtn:hover {
+    background-color: #334155;
+    transform: translateY(2px);
+}
